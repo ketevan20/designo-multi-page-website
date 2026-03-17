@@ -4,7 +4,7 @@ import NavBar from '../NavBar/NavBar'
 
 const Header = () => {
   return (
-    <div>
+    <div className='w-[90%] m-auto max-w-480 py-[clamp(24px,6vh,64px)]'>
         <NavBar light={true} />
     </div>
   )
