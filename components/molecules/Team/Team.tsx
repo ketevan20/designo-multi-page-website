@@ -2,7 +2,7 @@ import React from 'react'
 
 const Team = () => {
     return (
-        <div className='flex gap-7.5 flex-col md:flex-row justify-between md:text-center'>
+        <div className='flex gap-7.5 flex-col md:flex-row justify-between md:text-center relative z-30'>
             {[
                 {
                     bg: '-rotate-90',
