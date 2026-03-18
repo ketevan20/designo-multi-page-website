@@ -1,3 +1,5 @@
+'use client'
+import { motion } from 'motion/react';
 import React from 'react'
 
 type ExpertiseItemProps = {
@@ -5,9 +7,14 @@ type ExpertiseItemProps = {
     expertise: string;
 }
 
-const ExpertiseItem = ({bgImage, expertise}: ExpertiseItemProps) => {
+const ExpertiseItem = ({ bgImage, expertise }: ExpertiseItemProps) => {
     return (
-        <div className='h-full w-full relative overflow-hidden rounded-[15px] bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center gap-6 cursor-pointer group' style={{ backgroundImage: `url(${bgImage})` }}>
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ ease: "easeOut" }}
+            viewport={{ once: true }}
+            className='h-full w-full relative overflow-hidden rounded-[15px] bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center gap-6 cursor-pointer group' style={{ backgroundImage: `url(${bgImage})` }}>
 
             <div className='absolute inset-0 bg-[rgba(231,129,107,0.5)] opacity-0 group-hover:opacity-100 transition-opacity duration-300' />
 
@@ -16,7 +23,7 @@ const ExpertiseItem = ({bgImage, expertise}: ExpertiseItemProps) => {
                 <p className='label text-white'>VIEW PROJECTS</p>
                 <img src="/shared/desktop/icon-right-arrow.svg" alt="" className='w-1 h-2' />
             </div>
-        </div>
+        </motion.div>
     )
 }
 
