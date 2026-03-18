@@ -1,8 +1,11 @@
+import GraphocDesign from '@/components/organisms/GraphicDesign/GraphicDesign'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>page</div>
+    <div className='relative'>
+      <GraphocDesign />
+    </div>
   )
 }
 
