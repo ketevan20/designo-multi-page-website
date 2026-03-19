@@ -2,7 +2,7 @@ import React from 'react'
 
 const Deal = () => {
     return (
-        <div className='w-full bg-[rgba(253,243,240,1)] rounded-[15px] flex md:flex-row flex-col-reverse overflow-hidden relative'>
+        <div className='w-full bg-[rgba(253,243,240,1)] rounded-[15px] flex md:flex-row flex-col-reverse overflow-hidden relative z-30'>
             <div className='shrink-0 w-full md:w-[60%] px-6 md:px-20 py-16 md:py-20 lg:38 flex items-center justify-center'>
                 <div className='md:max-w-135 flex flex-col gap-8 md:text-left text-center'>
                     <h1 className='h1 text-[rgba(231,129,107,1)]'>The real deal</h1>
