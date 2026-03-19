@@ -2,7 +2,7 @@ import React from 'react'
 
 const Talent = () => {
     return (
-        <div className='w-full bg-[rgba(253,243,240,1)] rounded-[15px] flex md:flex-row flex-col overflow-hidden relative'>
+        <div className='w-full bg-[rgba(253,243,240,1)] rounded-[15px] flex md:flex-row flex-col overflow-hidden relative z-30'>
             <img src="/about/desktop/image-world-class-talent.jpg" alt="about us image" className='w-full md:w-[40%] object-cover max-md:max-h-80' />
 
             <div className='shrink-0 w-full md:w-[60%] px-6 md:px-20 py-16 md:py-20 lg:38 flex items-center justify-center'>
