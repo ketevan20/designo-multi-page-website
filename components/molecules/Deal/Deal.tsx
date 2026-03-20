@@ -1,8 +1,15 @@
+'use client'
+import { motion } from 'motion/react'
 import React from 'react'
 
 const Deal = () => {
     return (
-        <div className='w-full bg-[rgba(253,243,240,1)] rounded-[15px] flex md:flex-row flex-col-reverse overflow-hidden relative z-30'>
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ ease: "easeOut" }}
+            viewport={{ once: true,  amount: 0.5 }}
+            className='w-full bg-[rgba(253,243,240,1)] rounded-[15px] flex md:flex-row flex-col-reverse overflow-hidden relative z-30'>
             <div className='shrink-0 w-full md:w-[60%] px-6 md:px-20 py-16 md:py-20 lg:38 flex items-center justify-center'>
                 <div className='md:max-w-135 flex flex-col gap-8 md:text-left text-center'>
                     <h1 className='h1 text-[rgba(231,129,107,1)]'>The real deal</h1>
@@ -11,7 +18,7 @@ const Deal = () => {
             </div>
 
             <img src="/about/desktop/image-real-deal.jpg" alt="about us image" className='w-full md:w-[40%] object-cover max-md:max-h-80' />
-        </div>
+        </motion.div>
     )
 }
 

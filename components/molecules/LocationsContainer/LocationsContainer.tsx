@@ -1,4 +1,6 @@
+'use client'
 import Button from '@/components/atoms/Button/Button'
+import { motion } from 'motion/react'
 import React from 'react'
 
 const LocationsContainer = () => {
@@ -20,8 +22,13 @@ const LocationsContainer = () => {
                     illustration: '/shared/desktop/illustration-united-kingdom.svg',
                     title: 'united kingdom',
                 }
-            ].map((item) => (
-                <div key={item.title} className='flex flex-col items-center gap-12'>
+            ].map((item, i) => (
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ ease: "easeOut", delay: 0.1 * i }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    key={item.title} className='flex flex-col items-center gap-12'>
                     <div className='relative w-50 h-50 shrink-0 flex items-center justify-center'>
                         <img src="/home/desktop/bg-pattern-hero-home.svg" alt="" className={`absolute inset-0 w-full h-full ${item.bg} z-20`} />
                         <img src={item.illustration} alt="" className='relative z-30' />
@@ -29,10 +36,10 @@ const LocationsContainer = () => {
                     <div className='flex flex-col gap-8'>
                         <p className='label text-[rgba(51,49,54,1)]'>{item.title}</p>
                         <div>
-                            <Button text='see location' isWhite={false}/>
+                            <Button text='see location' isWhite={false} />
                         </div>
                     </div>
-                </div>
+                </motion.div>
             ))}
         </div>
     )
