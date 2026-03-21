@@ -12,7 +12,7 @@ const NavBar = ({ light }: NavBarProps) => {
             <div className='flex gap-10.5 uppercase font-normal text-[14px] leading-3.5 tracking-[2px]' style={{color: light ? 'rgba(51, 49, 54, 1)' : 'rgba(255, 255, 255, 1)'}}>
                 <Link href={'/about'} className='hover:underline'>Our Company</Link>
                 <Link href={'/locations'} className='hover:underline'>Locations</Link>
-                <Link href={''} className='hover:underline'>Contact</Link>
+                <Link href={'/contact'} className='hover:underline'>Contact</Link>
             </div>
         </div>
     )
