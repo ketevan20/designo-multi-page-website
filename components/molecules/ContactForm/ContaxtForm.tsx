@@ -25,7 +25,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='w-full bg-[rgba(231,129,107,1)] rounded-[15px] p-10 md:px-24 md:py-10 flex flex-col md:flex-row gap-10 items-center relative overflow-hidden ' >
+    <div className='w-screen left-1/2 -translate-x-1/2 sm:w-full bg-[rgba(231,129,107,1)] sm:rounded-[15px] p-10 md:px-24 md:py-10 flex flex-col md:flex-row gap-10 items-center relative overflow-hidden ' >
       <img src='/contact/desktop/bg-pattern-hero-desktop.svg' alt='' className='absolute left-0 bottom-0 z-10'/>
       <div className='text-white flex-1 flex flex-col gap-8 relative z-30'>
         <h1 className='h1'>Contact Us</h1>

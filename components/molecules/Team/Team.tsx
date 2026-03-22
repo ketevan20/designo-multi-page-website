@@ -2,7 +2,7 @@ import React from 'react'
 
 const Team = () => {
     return (
-        <div className='flex gap-7.5 flex-col md:flex-row justify-between md:text-center relative z-30'>
+        <div className='flex gap-7.5 flex-col md:flex-row justify-between text-center sm:text-left md:text-center relative z-30'>
             {[
                 {
                     bg: '-rotate-90',
@@ -23,7 +23,7 @@ const Team = () => {
                     text: 'We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.'
                 }
             ].map((item) => (
-                <div key={item.title} className='flex md:flex-col items-center gap-12'>
+                <div key={item.title} className='flex sm:flex-row flex-col md:flex-col items-center gap-12'>
                     <div className='relative w-50 h-50 shrink-0 flex items-center justify-center'>
                         <img src="/home/desktop/bg-pattern-hero-home.svg" alt="" className={`absolute inset-0 w-full h-full ${item.bg} z-20`} />
                         <img src={item.illustration} alt="" className='relative z-30' />

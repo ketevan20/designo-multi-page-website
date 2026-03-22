@@ -13,7 +13,7 @@ const ServiceCard = ({ title, text }: ServiceCardProps) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeOut" }}
             viewport={{ once: true }}
-            className='overflow-hidden bg-[rgba(231,129,107,1)] rounded-[15px] relative z-30 flex items-center justify-center text-center px-6 py-16'>
+            className='w-screen left-1/2 -translate-x-1/2 sm:w-full overflow-hidden bg-[rgba(231,129,107,1)] sm:rounded-[15px] relative z-30 flex items-center justify-center text-center px-6 py-16'>
             <div className='md:max-w-[60%] relative z-30'>
                 <h1 className='h2 text-white'>{title}</h1>
                 <p className='body text-white mt-6'>{text}</p>

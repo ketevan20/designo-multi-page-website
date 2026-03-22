@@ -5,7 +5,7 @@ import React from 'react'
 
 const LocationsContainer = () => {
     return (
-        <div className='grid gap-7.5 lg:grid-cols-3 text-center relative z-30'>
+        <div className='my-30 sm:my-0 grid gap-7.5 lg:grid-cols-3 text-center relative z-30'>
             {[
                 {
                     bg: '-rotate-90',
