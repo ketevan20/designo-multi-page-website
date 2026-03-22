@@ -6,7 +6,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='w-[90%] m-auto max-w-480 flex flex-col gap-40 mb-22 '>
+    <div className='w-[90%] m-auto max-w-480 flex flex-col gap-0 sm:gap-30 md:gap-40 mb-22 '>
       <AboutUs />
       <img src={'/shared/desktop/bg-pattern-leaf.svg'} alt='leaf' className='absolute z-10 left-0 top-80' />
       <Talent />

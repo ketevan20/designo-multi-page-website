@@ -4,7 +4,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className='w-[90%] m-auto max-w-480 flex flex-col gap-40 mb-22'>
+    <div className='w-[90%] m-auto max-w-480 flex flex-col gap-0 sm:gap-30 md:gap-40 sm:mb-22'>
         <ContaxtForm />
         <LocationsContainer />
     </div>
