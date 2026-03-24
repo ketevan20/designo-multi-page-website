@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className='flex flex-col gap-10 w-[90%] m-auto max-w-480'>
                     <NavBar light={false} />
                     <div className='bg-[rgba(255,255,255,1)] w-full h-px opacity-10'></div>
-                    <div className='flex justify-between text-[rgba(255,255,255,1)] opacity-50 font-normal text-[16px] leading-6.5'>
+                    <div className='flex flex-col gap-10 items-center max-sm:text-center sm:flex-row sm:justify-between text-[rgba(255,255,255,1)] opacity-50 font-normal text-[16px] leading-6.5'>
                         <p>
                             <span className='font-bold'>Designo Central Office</span> <br />
                             3886 Wellington Street <br />
@@ -23,7 +23,7 @@ const Footer = () => {
                             P : +1 253-863-8967 <br />
                             M : contact@designo.co
                         </p>
-                        <div className='flex gap-4 items-center self-end text-[rgba(231,129,107,1)]'>
+                        <div className='flex gap-4 items-center sm:self-end text-[rgba(231,129,107,1)]'>
                             <a className='hover:text-[rgba(255,173,155,1)]'>{facebookIcon}</a>
                             <a className='hover:text-[rgba(255,173,155,1)]'>{youtubeIcon}</a>
                             <a className='hover:text-[rgba(255,173,155,1)]'>{twitterIcon}</a>
