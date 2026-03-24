@@ -1,6 +1,7 @@
 'use client'
 import Button from '@/components/atoms/Button/Button'
 import { motion } from 'motion/react'
+import Link from 'next/link'
 import React from 'react'
 
 const HeroSection = () => {
@@ -16,7 +17,7 @@ const HeroSection = () => {
             <div className='max-w-135 relative z-30'>
                 <h1 className='h1 text-white'>Award-winning custom designs and digital branding solutions</h1>
                 <p className='body text-white mt-2.75 mb-10'>With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.</p>
-                <Button text="Learn More" />
+                <Link href={'about'}><Button text="Learn More" /></Link>
             </div>
 
             <img src="/home/desktop/phone2.svg" alt="" className='absolute bottom-0 right-0 object-cover max-h-[90%] xl:h-[90%] z-30' />

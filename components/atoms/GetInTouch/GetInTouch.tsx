@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../Button/Button'
+import Link from 'next/link'
 
 const GetInTouch = () => {
     return (
@@ -10,7 +11,7 @@ const GetInTouch = () => {
                     <p className='body text-white mt-2.75 mb-10'>Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
                 </div>
                 <div className='flex-1 flex justify-end'>
-                    <Button text='get in touch' />
+                    <Link href={'contact'}><Button text='get in touch' /></Link>
                 </div>
             </div>
             <img src="/shared/desktop/bg-pattern-call-to-action.svg" alt="" className='absolute right-0 z-10 w-219 h-146 object-cover' />

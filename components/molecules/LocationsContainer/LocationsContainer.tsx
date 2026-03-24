@@ -1,6 +1,7 @@
 'use client'
 import Button from '@/components/atoms/Button/Button'
 import { motion } from 'motion/react'
+import Link from 'next/link'
 import React from 'react'
 
 const LocationsContainer = () => {
@@ -35,9 +36,9 @@ const LocationsContainer = () => {
                     </div>
                     <div className='flex flex-col gap-8'>
                         <p className='label text-[rgba(51,49,54,1)]'>{item.title}</p>
-                        <div>
+                        <Link href={'/locations'}>
                             <Button text='see location' isWhite={false} />
-                        </div>
+                        </Link>
                     </div>
                 </motion.div>
             ))}
