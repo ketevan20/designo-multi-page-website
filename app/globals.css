@@ -6,6 +6,13 @@
   letter-spacing: 0px;
 }
 
+@media (max-width: 768px) {
+  .h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
 .h2 {
   font-family: 'Jost', sans-serif;
   font-weight: 500;
